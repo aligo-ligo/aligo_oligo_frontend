@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       <div>
-        1
+        초기 세팅
       </div>
     </main>
   )
