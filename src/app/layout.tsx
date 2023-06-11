@@ -1,4 +1,5 @@
 import Providers from "../utils/provider"
+import './global.css'
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,7 +14,9 @@ export default function RootLayout({
   return (
     <html lang='ko'>
       <body>
+        <main className='w-desktop mx-auto bg-white min-h-full'>
         <Providers>{children}</Providers>
+        </main>
       </body>
     </html>
   )
