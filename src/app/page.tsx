@@ -1,10 +1,19 @@
 import Link from "next/link";
+import logo from "../../public/logo.jpeg";
+import Image from "next/image";
 
 export default function Home() {
 	return (
 		<section className="flex flex-col items-center justify-center h-screen px-6 py-10 overflow-hidden">
 			<div className="flex flex-col items-center justify-center">
-				<h1 className="text-4xl font-bold mb-4">Aligo Oligo</h1>
+				<Image
+					src={logo}
+					alt="Picture of the author"
+					width={300}
+					// blurDataURL="data:..." automatically provided
+					// placeholder="blur" // Optional blur-up while loading
+				/>
+				<h1 className="text-4xl font-bold mt-4 mb-4">Aligo Oligo</h1>
 				<h2 className="text-2xl font-medium text-gray mb-12">
 					공유하여 목표를 달성해보세요!
 				</h2>
